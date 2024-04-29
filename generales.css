@@ -1,0 +1,103 @@
+*{
+  padding: 0;
+  margin: 0;
+  background-color: #0F0F0F;
+  color: white;
+}
+/*esto es solo para el nav*/
+nav {
+  display:grid;
+  grid-template-columns: auto 1fr auto;
+  padding: 15px 30px 10px 30px;
+
+}
+nav>div{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+
+}
+.busqueda{
+  display: none;
+}
+.unidos{
+display: flex;
+
+}
+.unidos button{
+  border-radius: 0px 20px 20px 0px;
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  border: rgba(128, 128, 128, 0.527) 1px solid;
+  width: 60px;
+  cursor: pointer;
+}
+input{
+  border-radius: 20px 0px 0px 20px;
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  border: rgba(128, 128, 128, 0.527) 1px solid;
+  width: 500px;
+  height: 40px;
+}
+
+.botoneslaterales {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.fotoperfil{
+  border-radius: 100%;
+  width: 40px;
+  cursor: pointer;
+}
+#yt-logo-updated-svg_yt7{
+  width: 100px;
+  cursor: pointer;
+}
+#barras {
+  cursor: pointer;
+}
+#micronav{
+  cursor: pointer;
+}
+@media screen and (min-width:768px) {
+  .busqueda{
+    display:flex;}
+  .button-responsive{
+    display: none; }
+}
+
+/*esto es para el body */
+
+.contenedor {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns:200px auto;
+  grid-template-rows: 40px auto;
+  grid-template-areas:"sidebar topmain"
+                      "sidebar  main";
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: rgb(72, 141, 32);
+
+}
+
+.topmain{
+  grid-area: topmain;
+  background: black;
+
+}
+
+.main{
+  grid-area: main;
+  background: brown;
+}
