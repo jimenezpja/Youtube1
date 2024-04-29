@@ -48,6 +48,7 @@ input{
   outline: none;
   border: none;
   cursor: pointer;
+  gap: 20px;
 }
 
 .fotoperfil{
