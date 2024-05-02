@@ -6,12 +6,21 @@
   <title>Youtube</title>
   <link rel="stylesheet" href="./generales.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
 </head>
   <nav>
     <div>
-      <i class="fa-solid fa-bars" id="barras"></i>
-      <svg xmlns="http://www.w3.org/2000/svg" id="yt-logo-updated-svg_yt7" class="external-icon" viewBox="0 0 90 20" focusable="false">
-        <svg id="yt-logo-updated_yt7" viewBox="0 0 90 20" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="white">
+      <button class="bch">
+        <i class="fa-solid fa-bars" id="barras"></i>
+      </button>
+      <a href="https://www.youtube.com">
+        <svg xmlns="http://www.w3.org/2000/svg" id="yt-logo-updated-svg_yt7" class="external-icon" viewBox="0 0 90 20" focusable="false">
+          <svg id="yt-logo-updated_yt7" viewBox="0 0 90 20" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="white">
           <g>
             <path d="M27.9727 3.12324C27.6435 1.89323 26.6768 0.926623 25.4468 0.597366C23.2197 2.24288e-07 14.285 0 14.285 0C14.285 0 5.35042 2.24288e-07 3.12323 0.597366C1.89323 0.926623 0.926623 1.89323 0.597366 3.12324C2.24288e-07 5.35042 0 10 0 10C0 10 2.24288e-07 14.6496 0.597366 16.8768C0.926623 18.1068 1.89323 19.0734 3.12323 19.4026C5.35042 20 14.285 20 14.285 20C14.285 20 23.2197 20 25.4468 19.4026C26.6768 19.0734 27.6435 18.1068 27.9727 16.8768C28.5701 14.6496 28.5701 10 28.5701 10C28.5701 10 28.5677 5.35042 27.9727 3.12324Z" fill="#FF0000"></path>
             <path d="M11.4253 14.2854L18.8477 10.0004L11.4253 5.71533V14.2854Z" fill="white"></path>
@@ -27,8 +36,9 @@
               <path d="M84.8657 13.8712C84.8657 14.6755 84.8892 15.2776 84.9363 15.6798C84.9833 16.0819 85.0821 16.3736 85.2326 16.5594C85.3831 16.7428 85.6136 16.8345 85.9264 16.8345C86.3474 16.8345 86.639 16.6699 86.7942 16.343C86.9518 16.0161 87.0365 15.4705 87.0506 14.7085L89.4824 14.8519C89.4965 14.9601 89.5035 15.1106 89.5035 15.3011C89.5035 16.4582 89.186 17.3237 88.5534 17.8952C87.9208 18.4667 87.0247 18.7536 85.8676 18.7536C84.4777 18.7536 83.504 18.3185 82.9466 17.446C82.3869 16.5735 82.1094 15.2259 82.1094 13.4008V11.2136C82.1094 9.33452 82.3987 7.96105 82.9772 7.09558C83.5558 6.2301 84.5459 5.79736 85.9499 5.79736C86.9165 5.79736 87.6597 5.97375 88.1771 6.32888C88.6945 6.684 89.059 7.23433 89.2707 7.98457C89.4824 8.7348 89.5882 9.76961 89.5882 11.0913V13.2362H84.8657V13.8712ZM85.2232 7.96811C85.0797 8.14449 84.9857 8.43377 84.9363 8.83593C84.8892 9.2381 84.8657 9.84722 84.8657 10.6657V11.5641H86.9283V10.6657C86.9283 9.86133 86.9001 9.25221 86.846 8.83593C86.7919 8.41966 86.6931 8.12803 86.5496 7.95635C86.4062 7.78702 86.1851 7.7 85.8864 7.7C85.5854 7.70235 85.3643 7.79172 85.2232 7.96811Z"></path>
             </g>
           </g>
+          </svg>
         </svg>
-      </svg>
+      </a>
     </div>
     <div class="busqueda">
       <div class="unidos">
@@ -37,28 +47,97 @@
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
       </div>
-      <i class="fa-solid fa-microphone" id="micronav"></i>
+      <button class="bch">
+        <i class="fa-solid fa-microphone" id="micronav"></i>
+      </button>
     </div>
     <div class="botoneslaterales">
       <div class="button-responsive">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <i class="fa-solid fa-microphone"></i>
+        <button class="bch">
+          <i class="fa-solid fa-magnifying-glass" id="lupa"></i>
+        </button>
+        <button class="bch">
+          <i class="fa-solid fa-microphone" id="microfono"></i>
+        </button>
       </div>
-        <i class="fa-solid fa-upload"></i>
-        <i class="fa-solid fa-bell"></i>
-      <img src="./profileyoutube.png" class="fotoperfil">
+      <button class="bch">
+        <i class="fa-solid fa-upload" id="cargar"></i>
+      </button>
+      <button class="bch">
+        <i class="fa-solid fa-bell" id="campana"></i>
+      </button>
+      <img src="./img/profileyoutube.png" class="fotoperfil">
     </div>
   </nav>
 <body>
   <div class="contenedor">
     <div class="sidebar">
-      sidebar
+      <a href=""><i><img src="./img/home.png" alt="" width="25px"></i>Principal</a>
+      <a href=""><i><img src="./img/shorts.png" alt=""width="25px"></i>Shorts</a>
+      <a href=""><i><img src="./img/suscriptions.png" alt=""width="25px"></i>Suscipciones</a>
+      <a href=""><i><img src="./img/tu.png" alt=""width="25px"></i>Tu</a>
     </div>
     <div class="topmain">
-      contenidotop
+      <a href=""><button>
+        Todos
+      </button></a>
+      <a href=""><button>
+        Musica
+      </button></a>
+      <a href=""><button>
+        Programación
+      </button></a>
+      <a href=""><button>
+        Reguetón
+      </button></a>
+      <a href=""><button>
+        Salsa
+      </button></a>
+      <a href=""><button>
+        Mixes
+      </button></a>
+      <a href=""><button>
+        Pop
+      </button></a>
+      <a href=""><button>
+        Naruto
+      </button></a>
+      <a href=""><button>
+        Baladas
+      </button></a>
+      <a href=""><button>
+        Videojuegos
+      </button></a>
+      <a href=""><button>
+        Romeo
+      </button></a>
+      <a href=""><button>
+        Caribe
+      </button></a>
+      <a href=""><button>
+        developments
+      </button></a>
+      <a href=""><button>
+        Champions
+      </button></a>
+      <a href=""><button>
+        Futbol
+      </button></a>
+      <a href=""><button id="siguiente">
+        >
+      </button></a>
     </div>
     <div class="main">
-      contenido videos
+      <div class="gridvideos">
+          <a href="https://www.youtube.com/watch?v=ELHQi463lW0" class="video"><img src="./img/mezcladereggaeton.png" alt=""></a>
+          <a href="https://www.youtube.com/watch?v=piz7jbNeKjg"class="video"><img src="./img/reggaetonantiguo.png" alt=""></a>
+          <a href="https://www.youtube.com/watch?v=-F9nCQtxkRw&list=RD-F9nCQtxkRw&start_radio=1"class="video"><img src="./img/thereason.png" alt=""></a>
+          <a href="https://www.youtube.com/watch?v=jjSGKRG3jbk&list=RDjjSGKRG3jbk&start_radio=1"class="video"><img src="./img/homenajepastorlopez.png" alt=""></a>
+          <a href="https://www.youtube.com/watch?v=Z1WLlPMvNrQ"class="video"><img src="./img/eddiesantiago_.png" alt=""></a>
+          <a href="https://www.youtube.com/watch?v=OJFJWtOzIQ0"class="video"><img src="./img/guiasalarian_.png" alt=""></a>
+          <a href="https://www.youtube.com/watch?v=8QBiZSea8EM&list=RD8QBiZSea8EM&start_radio=1"class="video"><img src="./img/jhonlegend_.png" alt=""></a>
+          <a href="https://www.youtube.com/watch?v=UfzXnjmzq5c&t=1135s"class="video"><img src="./img/rockspañol_.png" alt=""></a>
+      </div>
     </div>
   </div>
 </body>
