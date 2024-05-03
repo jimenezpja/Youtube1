@@ -118,15 +118,34 @@ nav button:hover{
   min-height: 100vh;
   margin: 0 auto;
   display: grid;
-  grid-template-columns:70px auto;
+  grid-template-columns: auto;
   grid-template-rows: 40px auto;
-  grid-template-areas:"sidebar topmain"
-                      "sidebar  main";
+  grid-template-areas:"topmain"
+                      "main";
 }
 /* esto es para la barra lateral izquierda*/
-.sidebar {
+
+.sidebar{
+  display: none;
+}
+
+@media screen and (min-width:768px) {
+  .contenedor {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:70px auto;
+    grid-template-rows: 40px auto;
+    grid-template-areas:"sidebar topmain"
+                        "sidebar  main";
+  }
+
+  .sidebar {
+  display: flex;
   grid-area: sidebar;
   background: #0f0f0f;
+  flex-direction: column;
 
 }
 .sidebar a{
@@ -140,9 +159,13 @@ nav button:hover{
   text-decoration: none;
   height: 50px;
 }
+.sidebar a img{
+  display: flex;
+}
 .sidebar a:hover{
   background-color: rgba(77, 71, 71, 0.884);
   border-radius: 10%;
+}
 }
 
 /* esto es para los botones del centro*/
@@ -154,9 +177,10 @@ nav button:hover{
   display: flex;
   flex-direction: row;
   align-items:center;
-  justify-content:center;
+  justify-content:baseline;
   gap: 20px;
   width: 100%;
+  overflow: hidden;
 }
 .topmain button{
   border-radius: 10px;
