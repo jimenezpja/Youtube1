@@ -18,7 +18,6 @@ nav>div{
   flex-direction: row;
   justify-content: end;
   align-items: center;
-
 }
 .busqueda{
   display: none;
